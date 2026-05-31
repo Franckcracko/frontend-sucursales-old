@@ -271,7 +271,7 @@ export default function Page() {
                                                             variant={sale.pending > 0 ? "destructive" : "secondary"}
                                                             className="font-mono"
                                                         >
-                                                            ${sale.pending.toFixed(2)}
+                                                            ${sale.pending}
                                                         </Badge>
                                                         <span className="text-xs text-muted-foreground">
                                                             Pendiente
