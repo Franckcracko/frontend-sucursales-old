@@ -193,7 +193,7 @@ export default function Page() {
                         <div className="flex-1">
                             <p className="text-sm text-muted-foreground">
                                 {initDate && endDate ? (
-                                    <>Reporte del {new Date(initDate).toLocaleDateString('es-MX')} al {new Date(endDate).toLocaleDateString('es-MX')}</>
+                                    <>Reporte del {initDate} al {endDate}</>
                                 ) : (
                                     "Selecciona un rango de fechas para continuar."
                                 )}
