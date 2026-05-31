@@ -110,7 +110,7 @@ export function ClientSelectionModal({
           </Button>
         )}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[480px] max-h-[85vh] flex flex-col">
+      <DialogContent className="sm:max-w-[480px] max-h-[85vh] flex flex-col overflow-hidden">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Users className="size-5" />
@@ -150,7 +150,8 @@ export function ClientSelectionModal({
 
         <Separator />
 
-        <ScrollArea className="flex-1 -mx-2 px-2">
+        <ScrollArea className="h-[240px] -mx-2 px-2">
+          <div className="pr-3">
           {filteredClients.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-8 text-center">
               <Users className="size-10 text-muted-foreground mb-3 opacity-50" />
@@ -198,6 +199,7 @@ export function ClientSelectionModal({
               })}
             </div>
           )}
+          </div>
         </ScrollArea>
 
         <Separator />
